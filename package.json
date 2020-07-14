@@ -1,0 +1,26 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "We are going to practice using Jest as a testing framework",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sz16900/testing-practice.git"
+  },
+  "keywords": [
+    "jest",
+    "javascript"
+  ],
+  "author": "Seth Zea & Elijah Obominuru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sz16900/testing-practice/issues"
+  },
+  "homepage": "https://github.com/sz16900/testing-practice#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
