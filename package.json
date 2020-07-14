@@ -4,7 +4,8 @@
   "description": "We are going to practice using Jest as a testing framework",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch": "jest --watch *.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/sz16900/testing-practice#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.10.4",
     "jest": "^26.1.0"
   }
 }
