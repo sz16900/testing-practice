@@ -1,5 +1,8 @@
-const arrayAnalysis = (arr) => {
-  if (arr.some(isNaN)) {
+const arrayAnalysis = (arr = null) => {
+  // Because eslint throws an error when using isNaN
+  // we found this solution at: https://stackoverflow.com/questions/46677774/eslint-unexpected-use-of-isnan
+  const isNumber = (value) => Number.isNaN(Number(value));
+  if (arr === null || arr.some(isNumber)) {
     throw new Error('Arrays can only contain numerical values');
   } else {
     return {
