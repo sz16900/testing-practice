@@ -16,7 +16,7 @@ it('Finds the length', () => {
   expect(arrayAnalysis([1, 8, 3, 4, 2, 6]).lengthArray).toBe(6);
 });
 
-test('Should throw an error if called without a number', () => {
+it('Should throw an error if called without a number', () => {
   expect(() => {
     arrayAnalysis([1, 8, 3, 4, 'sadsa', 2, 6]).lengthArray;
   }).toThrow('Arrays can only contain numerical values');

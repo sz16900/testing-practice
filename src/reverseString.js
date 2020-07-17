@@ -1,5 +1,8 @@
 const reverseString = (str) => {
-  if (typeof str !== 'string') return '';
-  return str.split('').reverse().join('');
+  if (typeof str !== 'string') {
+    throw new Error('Only use strings');
+  } else {
+    return str.split('').reverse().join('');
+  }
 };
 export default reverseString;
