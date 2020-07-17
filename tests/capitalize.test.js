@@ -8,6 +8,10 @@ it('Returns only one capitalized letter', () => {
   expect(capitalize('s')).toBe('S');
 });
 
+it('Returns a capitalise letter', () => {
+  expect(capitalize('S')).toBe('S');
+});
+ 
 it('Returns nothing', () => {
   expect(capitalize(8079876789)).toBe('');
 });
