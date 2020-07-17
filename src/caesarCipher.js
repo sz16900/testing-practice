@@ -2,6 +2,7 @@ const caesarCipher = (() => {
   const encrypt = (str) => {
     let result = '';
     [...str].forEach((char) => {
+      // filter out any non alpabetical character
       if (char.match(/[a-z]/i)) {
         const charCode = char.charCodeAt(0);
         // wrap it
