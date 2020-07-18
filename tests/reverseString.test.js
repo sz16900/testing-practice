@@ -4,10 +4,12 @@ it('Reverses the string', () => {
   expect(reverseString('seth')).toBe('htes');
 });
 
-it('Returns nothing', () => {
-  expect(reverseString(12233)).toBe('');
-});
-
 it('Does nothing, really', () => {
   expect(reverseString('s')).toBe('s');
+});
+
+it('Should throw an error if called without a string', () => {
+  expect(() => {
+    reverseString(456789);
+  }).toThrow('Only use strings');
 });
